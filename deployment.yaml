@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: kietph2110/myapp:09545fe215bd1e70d14225b8b270d09433009bce
+        image: kietph2110/myapp:1400e1dbd19f313170f3e1a6dd0e032bc75317e7
         ports:
         - containerPort: 3000
