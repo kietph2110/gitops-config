@@ -17,3 +17,15 @@ spec:
         image: kietph2110/myapp:2296612765f9577bdf039fe8de6e6e660f9c0e4d
         ports:
         - containerPort: 3000
+        livenessProbe:
+          httpGet:
+            path: /health
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /health
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 10
