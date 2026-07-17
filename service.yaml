@@ -3,11 +3,10 @@ kind: Service
 metadata:
   name: myapp-service
 spec:
-  type: NodePort
+  type: LoadBalancer  # Chuyển từ NodePort sang LoadBalancer
   selector:
     app: myapp
   ports:
     - protocol: TCP
       port: 80
       targetPort: 3000
-      nodePort: 30080
