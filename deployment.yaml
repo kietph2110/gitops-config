@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: kietph2110/myapp:62f386fc7c891b3d3d7bf19106ef42346cdae571
+        image: kietph2110/myapp:74b12d23c158bb6e8e161ba090c4e32111725cfb
         ports:
         - containerPort: 3000
         livenessProbe:
